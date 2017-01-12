@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<source_library title="source library">
+  <!--Source library created by AlltheSourcesFitLPmodel.py at Thu Jan 12 09:55:08 2017-->
+  <source name="PKS1440-389" type="PointSource" tscalc="1">
+    <spectrum type="LogParabola">
+      <parameter free="1" max="1000" min="1e-05" name="norm" scale="1e-15" value="0.395257"/>
+      <parameter free="1" max="5" min="0.5" name="alpha" scale="1" value="0.128159"/>
+      <parameter free="0" max="3e+07" min="30" name="Eb" scale="1" value="100000"/>
+      <parameter free="1" max="5" min="0.0005" name="beta" scale="1" value="0.0435589"/>
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="221.009"/>
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="-39.1299"/>
+    </spatialModel>
+  </source>
+  <source instrument="CTA" name="CTABackgroundModel" type="CTAIrfBackground">
+    <spectrum type="PowerLaw">
+      <parameter free="1" max="1000" min="0.001" name="Prefactor" scale="1" value="1"/>
+      <parameter free="1" max="5" min="-5" name="Index" scale="1" value="0"/>
+      <parameter free="0" max="1000" min="0.01" name="PivotEnergy" scale="1e+06" value="1"/>
+    </spectrum>
+  </source>
+</source_library>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<source_library title="source library">
+  <source name="1ES0647+250" type="PointSource" ts="-0.001" tscalc="1">
+    <spectrum type="LogParabola">
+      <parameter name="norm" value="0.516708" error="0" scale="1e-15" min="1e-05" max="1000" free="1" />
+      <parameter name="alpha" value="-0.143431" error="0" scale="1" min="-5" max="5" free="1" />
+      <parameter name="beta" value="0.0243154" error="0" scale="1" min="-5" max="5" free="1" />
+      <parameter name="Eb" value="100000" scale="1" min="30" max="3e+07" free="0" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter name="RA" value="102.697" scale="1" min="-360" max="360" free="0" />
+      <parameter name="DEC" value="25.0632" scale="1" min="-90" max="90" free="0" />
+    </spatialModel>
+  </source>
+  <source name="CTABackgroundModel" type="CTAIrfBackground" instrument="CTA">
+    <spectrum type="PowerLaw">
+      <parameter name="Prefactor" value="3.21668" error="0.023914" scale="1" min="0.001" max="1000" free="1" />
+      <parameter name="Index" value="1.87099" error="0.00518523" scale="1" min="-5" max="5" free="1" />
+      <parameter name="PivotEnergy" value="1" scale="1e+06" min="0.01" max="1000" free="0" />
+    </spectrum>
+  </source>
+</source_library>

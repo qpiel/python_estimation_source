@@ -1,0 +1,141 @@
+2017-01-11T16:17:14: +============+
+2017-01-11T16:17:14: | Parameters |
+2017-01-11T16:17:14: +============+
+2017-01-11T16:17:14:  inobs .....................: /Users/gateflorian/Documents/CTAtools/Script/out/PMNJ1936-4719_0.3h_event00001.fits
+2017-01-11T16:17:14:  inmodel ...................: /Users/gateflorian/Documents/CTAtools/Script/out/PMNJ1936-4719_forSimu3FGLPosition.xml
+2017-01-11T16:17:14:  expcube ...................: [not queried]
+2017-01-11T16:17:14:  psfcube ...................: [not queried]
+2017-01-11T16:17:14:  edispcube .................: [not queried]
+2017-01-11T16:17:14:  bkgcube ...................: [not queried]
+2017-01-11T16:17:14:  caldb .....................: prod2
+2017-01-11T16:17:14:  irf .......................: South_0.5h
+2017-01-11T16:17:14:  edisp .....................: no
+2017-01-11T16:17:14:  outmodel ..................: /Users/gateflorian/Documents/CTAtools/Script/out/PMNJ1936-4719_results.xml
+2017-01-11T16:17:14:  stat ......................: POISSON
+2017-01-11T16:17:14:  refit .....................: no
+2017-01-11T16:17:14:  fix_spat_for_ts ...........: no
+2017-01-11T16:17:14:  chatter ...................: 2
+2017-01-11T16:17:14:  clobber ...................: yes
+2017-01-11T16:17:14:  debug .....................: no
+2017-01-11T16:17:14:  mode ......................: ql
+2017-01-11T16:17:14:  logfile ...................: ctlike.log
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +=============+
+2017-01-11T16:17:14: | Observation |
+2017-01-11T16:17:14: +=============+
+2017-01-11T16:17:14: === GObservations ===
+2017-01-11T16:17:14:  Number of observations ....: 1
+2017-01-11T16:17:14:  Number of models ..........: 2
+2017-01-11T16:17:14:  Number of observed events .: 5744
+2017-01-11T16:17:14:  Number of predicted events : 0
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +=================================+
+2017-01-11T16:17:14: | Maximum likelihood optimisation |
+2017-01-11T16:17:14: +=================================+
+2017-01-11T16:17:14:  >Iteration   0: -logL=50951.284, Lambda=1.0e-03
+2017-01-11T16:17:14:  >Iteration   1: -logL=50948.285, Lambda=1.0e-03, delta=2.999, max(|grad|)=-5.767975 [beta:4]
+2017-01-11T16:17:14:   Iteration   2: -logL=50948.361, Lambda=1.0e-04, delta=-0.076, max(|grad|)=-10.112702 [beta:4] (stalled)
+2017-01-11T16:17:14:  >Iteration   3: -logL=50948.202, Lambda=1.0e-03, delta=0.159, max(|grad|)=-0.954868 [beta:4]
+2017-01-11T16:17:14:  >Iteration   4: -logL=50948.200, Lambda=1.0e-04, delta=0.003, max(|grad|)=-0.393633 [beta:4]
+2017-01-11T16:17:14:  
+2017-01-11T16:17:14:  +==================+
+2017-01-11T16:17:14:  | Curvature matrix |
+2017-01-11T16:17:14:  +==================+
+2017-01-11T16:17:14:  === GMatrixSparse ===
+2017-01-11T16:17:14:   Number of rows ............: 11
+2017-01-11T16:17:14:   Number of columns .........: 11
+2017-01-11T16:17:14:   Number of nonzero elements : 25
+2017-01-11T16:17:14:   Number of allocated cells .: 537
+2017-01-11T16:17:14:   Memory block size .........: 512
+2017-01-11T16:17:14:   Sparse matrix fill ........: 0.206612
+2017-01-11T16:17:14:   Pending element ...........: 0
+2017-01-11T16:17:14:   Fill stack size ...........: 0 (none)
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14:   0, 0, 172.472, 104.538, 228.621, 0, 0, 32.4014, -24.4968, 0, 0
+2017-01-11T16:17:14:   0, 0, 104.538, 70.3984, 167.316, 0, 0, 15.2493, -6.31206, 0, 0
+2017-01-11T16:17:14:   0, 0, 228.621, 167.316, 424.628, 0, 0, 28.6493, -1.95944, 0, 0
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14:   0, 0, 32.4014, 15.2493, 28.6493, 0, 0, 5985.34, -3717.86, 0, 0
+2017-01-11T16:17:14:   0, 0, -24.4968, -6.31206, -1.95944, 0, 0, -3717.86, 6529.74, 0, 0
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14:   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +====================================+
+2017-01-11T16:17:14: | Maximum likelihood re-optimisation |
+2017-01-11T16:17:14: +====================================+
+2017-01-11T16:17:14:  >Iteration   0: -logL=50969.002, Lambda=1.0e-03
+2017-01-11T16:17:14:  >Iteration   1: -logL=50968.941, Lambda=1.0e-03, delta=0.061, max(|grad|)=-0.166982 [Prefactor:0]
+2017-01-11T16:17:14:  >Iteration   2: -logL=50968.941, Lambda=1.0e-04, delta=0.000, max(|grad|)=-0.000085 [Index:1]
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +============================================+
+2017-01-11T16:17:14: | Maximum likelihood re-optimisation results |
+2017-01-11T16:17:14: +============================================+
+2017-01-11T16:17:14: === GOptimizerLM ===
+2017-01-11T16:17:14:  Optimized function value ..: 50968.941
+2017-01-11T16:17:14:  Absolute precision ........: 0.005
+2017-01-11T16:17:14:  Acceptable value decrease .: 2
+2017-01-11T16:17:14:  Optimization status .......: converged
+2017-01-11T16:17:14:  Number of parameters ......: 4
+2017-01-11T16:17:14:  Number of free parameters .: 2
+2017-01-11T16:17:14:  Number of iterations ......: 2
+2017-01-11T16:17:14:  Lambda ....................: 1e-05
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +=========================================+
+2017-01-11T16:17:14: | Maximum likelihood optimisation results |
+2017-01-11T16:17:14: +=========================================+
+2017-01-11T16:17:14: === GOptimizerLM ===
+2017-01-11T16:17:14:  Optimized function value ..: 50948.200
+2017-01-11T16:17:14:  Absolute precision ........: 0.005
+2017-01-11T16:17:14:  Acceptable value decrease .: 2
+2017-01-11T16:17:14:  Optimization status .......: converged
+2017-01-11T16:17:14:  Number of parameters ......: 11
+2017-01-11T16:17:14:  Number of free parameters .: 5
+2017-01-11T16:17:14:  Number of iterations ......: 4
+2017-01-11T16:17:14:  Lambda ....................: 1e-05
+2017-01-11T16:17:14:  Maximum log likelihood ....: -50948.200
+2017-01-11T16:17:14:  Observed events  (Nobs) ...: 5744.000
+2017-01-11T16:17:14:  Predicted events (Npred) ..: 5743.951 (Nobs - Npred = 0.0494739)
+2017-01-11T16:17:14: === GModels ===
+2017-01-11T16:17:14:  Number of models ..........: 2
+2017-01-11T16:17:14:  Number of parameters ......: 11
+2017-01-11T16:17:14: === GModelSky ===
+2017-01-11T16:17:14:  Name ......................: PMNJ1936-4719
+2017-01-11T16:17:14:  Instruments ...............: all
+2017-01-11T16:17:14:  Test Statistic ............: 41.4821
+2017-01-11T16:17:14:  Instrument scale factors ..: unity
+2017-01-11T16:17:14:  Observation identifiers ...: all
+2017-01-11T16:17:14:  Model type ................: PointSource
+2017-01-11T16:17:14:  Model components ..........: "SkyDirFunction" * "LogParabola" * "Constant"
+2017-01-11T16:17:14:  Number of parameters ......: 7
+2017-01-11T16:17:14:  Number of spatial par's ...: 2
+2017-01-11T16:17:14:   RA .......................: 294.245 [-360,360] deg (fixed,scale=1)
+2017-01-11T16:17:14:   DEC ......................: -47.3286 [-90,90] deg (fixed,scale=1)
+2017-01-11T16:17:14:  Number of spectral par's ..: 4
+2017-01-11T16:17:14:   norm .....................: 3.07926e-17 +/- 6.14847e-17 [1e-21,1e-13] ph/cm2/s/MeV (free,scale=1e-16,gradient)
+2017-01-11T16:17:14:   alpha ....................: -0.519755 +/- 2.04264 [-5,5]  (free,scale=1,gradient)
+2017-01-11T16:17:14:   beta .....................: -0.477843 +/- 0.491293 [-5,5]  (free,scale=1,gradient)
+2017-01-11T16:17:14:   Eb .......................: 100000 [30,3e+07] MeV (fixed,scale=1,gradient)
+2017-01-11T16:17:14:  Number of temporal par's ..: 1
+2017-01-11T16:17:14:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2017-01-11T16:17:14: === GCTAModelIrfBackground ===
+2017-01-11T16:17:14:  Name ......................: CTABackgroundModel
+2017-01-11T16:17:14:  Instruments ...............: CTA
+2017-01-11T16:17:14:  Instrument scale factors ..: unity
+2017-01-11T16:17:14:  Observation identifiers ...: all
+2017-01-11T16:17:14:  Model type ................: "PowerLaw" * "Constant"
+2017-01-11T16:17:14:  Number of parameters ......: 4
+2017-01-11T16:17:14:  Number of spectral par's ..: 3
+2017-01-11T16:17:14:   Prefactor ................: 0.97657 +/- 0.0160827 [0.001,1000] ph/cm2/s/MeV (free,scale=1,gradient)
+2017-01-11T16:17:14:   Index ....................: -0.0260738 +/- 0.015404 [-5,5]  (free,scale=1,gradient)
+2017-01-11T16:17:14:   PivotEnergy ..............: 1e+06 [10000,1e+09] MeV (fixed,scale=1e+06,gradient)
+2017-01-11T16:17:14:  Number of temporal par's ..: 1
+2017-01-11T16:17:14:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: +==============+
+2017-01-11T16:17:14: | Save results |
+2017-01-11T16:17:14: +==============+
+2017-01-11T16:17:14: Save fitted parameters into file "/Users/gateflorian/Documents/CTAtools/Script/out/PMNJ1936-4719_results.xml".
+2017-01-11T16:17:14: 
+2017-01-11T16:17:14: Application "ctlike" terminated after 0 wall clock seconds, consuming 0.705071 seconds of CPU time. This was rather quick!
