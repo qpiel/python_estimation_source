@@ -216,7 +216,17 @@ def GetSourceInformation(source,datfile):
     os.remove("out/"+source.replace(" ","")+'_forSimu3FGLPosition.xml')
     shutil.move("out/"+"tmp.xml","out/"+source.replace(" ","")+'_forSimu3FGLPosition.xml')
 
-    return popt[0],popt[1],popt[2]
+    fichier3 = open("out/"+str(source)+'_results.xml','r')
+    with  fichier3 as f:
+        for line in f:
+            if line.find(str(source)) != -1:
+                
+                num = 41 +len(str(source))
+                ts = float(line[num:num+6])
+               #break
+
+
+    return popt[0],popt[1],popt[2],ts
 
 
      
