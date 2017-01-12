@@ -4,6 +4,7 @@ from ctoolsAnalysis.config import get_config,get_default_config
 import AlltheSourceFitLPmodel
 import AllSourcesSimulate_Ctools
 import AllSourcesFit_Ctools
+import matplotlib.pyplot as plt
 x = []
 ts = []
 with open("Source2.txt") as f:
@@ -35,3 +36,11 @@ with open("Source2.txt") as f:
         tmp=DoFit(line.split("\t")[0],line.split("\t")[5],100)
         ts.append(tmp)
         x.append(100)
+
+        plt.plot(x,ts,label = line.split("\t")[0])
+        plt.legend(loc=3)
+        plt.ylabel('ts')
+        plt.xlabel('Simulation time (h)')
+        plt.title(str(source))
+        plt.show()
+
