@@ -1,7 +1,7 @@
 import os,sys
 from os.path import join
 from ctoolsAnalysis.config import get_config,get_default_config
-import AlltheSourceFitLPmodel
+import AlltheSourcesFitLPmodel
 import AllSourcesSimulate_Ctools
 import AllSourcesFit_Ctools
 import matplotlib.pyplot as plt
@@ -18,7 +18,7 @@ with open("Source2.txt") as f:
         DoSimulation(line.split("\t")[0],line.split("\t")[5],1)
         tmp=DoFit(line.split("\t")[0],line.split("\t")[5],1)
         ts.append(tmp)
-        
+        print ts
 
         DoSimulation(line.split("\t")[0],line.split("\t")[5],3)
         tmp=DoFit(line.split("\t")[0],line.split("\t")[5],3)
