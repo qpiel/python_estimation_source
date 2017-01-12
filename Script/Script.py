@@ -9,7 +9,6 @@ liste =[]
 x = [1,3,10,30,100]
 liste.append(x)
 
-i=0
 with open("Source2.txt") as f:
    for line in f:
         ts = []
@@ -39,14 +38,15 @@ with open("Source2.txt") as f:
         DoSimulation(line.split("\t")[0],line.split("\t")[5],100)
         tmp=DoFit(line.split("\t")[0],line.split("\t")[5],100)
         ts.append(tmp)
-        
-        liste.append(ts)
 
         plt.plot(x,ts,label = line.split("\t")[0])
         plt.legend(loc=3)
         plt.ylabel('ts')
         plt.xlabel('Simulation time (h)')
-        plt.title(str(source))
+        plt.title("Significativity"+str(source))
         plt.show()
-        i = i+1
+
+
+        liste.append(ts)
+        
 
